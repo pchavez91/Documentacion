@@ -208,3 +208,9 @@ Un tamaño específico (in px, pt, cm, em, etc)*/
   text-transform: lowercase;/*minusculas*/
   text-transform: capitalize;/*poner en mayúscula la primera letra de cada palabra:*/
 }
+
+.espaciado_texto {
+  text-indent: 50px;/*sangria*/
+  letter-spacing: 5px;/*espacio entre letras*/
+  line-height: 1.8;/*altura de linea*/
+}
