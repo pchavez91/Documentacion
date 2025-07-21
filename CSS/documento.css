@@ -16,4 +16,52 @@
   content: "";
   clear: both;
   display: table;
-}s
+}
+
+colores {
+color: red;/*color por nombre*/
+color: rgb(255, 224, 0); /*color por RGB*/
+color: rgba(255, 99, 71, 0); /*rgba( rojo, verde , azul, alfa )*/
+color: #ff6347;/*hexadecimal es en formato #rrggbb y si se repite el digito se puede acortar en #rgb*/
+color: hsl(0, 100%, 50%);/*hsl( tono , saturación , luminosidad )*/
+color: hsla(0, 100%, 50%, 0.5);/*hsla( tono, saturación , luminosidad, alfa )*/
+}
+
+fondos {
+background-color:lightblue;/*color de fondo*/
+opacity: 0.3;/*opacidad/transparencia*/
+background-image: url("");/*propiedad especifica una imagen para usar como fondo de un elemento*/
+background-repeat: repeat-x;/*Si la imagen de arriba se repite sólo horizontalmente (repeat-y para vertical)*/
+}
+/*la imagen de fondo en la esquina superior derecha*/
+imagen {
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+/*la imagen de fondo debe ser fija*/
+imagen_fija {
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+/*la imagen de fondo debe desplazarse con el resto de la página*/
+image_desplaza {
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: scroll;
+}
+/*en vez de escribir del modo tradicional se puede acortar codigo asi
+body {
+  background-color: #ffffff;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: right top;
+}*/
+reducir_codigo {
+  background: #ffffff url("") no-repeat right top;
+}
