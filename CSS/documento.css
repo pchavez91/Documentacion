@@ -114,3 +114,17 @@ body {
   border-style: solid;
   border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
 }
+
+.borde_color {
+  border-style: solid;
+  border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+}
+
+.borde_abreviado {
+  border: 5px solid red;
+}
+
+.borde_redondeado {
+  border: 2px solid red;
+  border-radius: 5px;
+}
