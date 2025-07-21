@@ -133,3 +133,25 @@ body {
   margin: 25px 50px 75px 100px;/*top, right, left, down*/
   /*tambien se puede usar "margin:auto" y el "margin-bottom*/
 }
+
+.relleno {
+  padding: 25px 50px 75px 100px;/*top, right, left, down*/
+  /*puede ser longitud : especifica un relleno en px, pt, cm, etc.
+    % - especifica un relleno en % del ancho del elemento contenedor
+    heredar: especifica que el relleno debe heredarse del elemento padre*/
+  width: 300px;/*ancho del elemento*/
+  box-sizing: border-box;/*para mantener el ancho del elemento*/
+  height: 300px/*altura del elemento*/
+}
+
+.alto_ancho {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
+}
+/*valores alto-ancho:
+auto- Este es el valor predeterminado. El navegador calcula la altura y el ancho.
+length- Define la altura/ancho en px, cm, etc.
+%- Define la altura/ancho en porcentaje del bloque contenedor.
+initial- Establece la altura/ancho a su valor predeterminado
+inherit- La altura/ancho se heredará de su valor padre.*/
