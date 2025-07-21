@@ -203,3 +203,8 @@ Un tamaño específico (in px, pt, cm, em, etc)*/
   text-decoration-thickness: auto;/*el grosor de la línea de decoración.*/
 }
 
+.Mayusculas {
+  text-transform: uppercase;/*para convertir todo en letras mayúsculas*/
+  text-transform: lowercase;/*minusculas*/
+  text-transform: capitalize;/*poner en mayúscula la primera letra de cada palabra:*/
+}
