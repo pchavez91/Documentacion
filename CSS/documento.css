@@ -195,3 +195,11 @@ Un tamaño específico (in px, pt, cm, em, etc)*/
   unicode-bidi:bidi-override;/*lo mismo que direccion*/
   vertical-align: baseline;/*alineación vertical de una imagen en un texto*/
 }
+
+.decorac_texto {
+  text-decoration-line: overline;/*agregar una línea de decoración al texto.*/
+  text-decoration-color: red;/*color de texto*/
+  text-decoration-style: solid;/*estilo de la línea de decoración*/
+  text-decoration-thickness: auto;/*el grosor de la línea de decoración.*/
+}
+
