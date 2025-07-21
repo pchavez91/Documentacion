@@ -187,3 +187,11 @@ thick (typically 5px)
 Un tamaño específico (in px, pt, cm, em, etc)*/
 
 /*La outline-offset propiedad añade espacio entre el contorno y el borde de un elemento. El espacio entre un elemento y su contorno es transparente.*/
+
+.alineacion_texto {
+  text-align: center;/*puede ser tambien left, right, justificy*/
+  text-align-last: right;/*alinear la última línea de un texto que puede ser left, right, center, justificy*/
+  direction:rtl;/*para cambiar la dirección del texto de un elemento*/
+  unicode-bidi:bidi-override;/*lo mismo que direccion*/
+  vertical-align: baseline;/*alineación vertical de una imagen en un texto*/
+}
