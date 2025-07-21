@@ -18,30 +18,30 @@
   display: table;
 }
 
-colores {
-color: red;/*color por nombre*/
-color: rgb(255, 224, 0); /*color por RGB*/
-color: rgba(255, 99, 71, 0); /*rgba( rojo, verde , azul, alfa )*/
-color: #ff6347;/*hexadecimal es en formato #rrggbb y si se repite el digito se puede acortar en #rgb*/
-color: hsl(0, 100%, 50%);/*hsl( tono , saturación , luminosidad )*/
-color: hsla(0, 100%, 50%, 0.5);/*hsla( tono, saturación , luminosidad, alfa )*/
+.colores {
+  color: red;/*color por nombre*/
+  color: rgb(255, 224, 0); /*color por RGB*/
+  color: rgba(255, 99, 71, 0); /*rgba( rojo, verde , azul, alfa )*/
+  color: #ff6347;/*hexadecimal es en formato #rrggbb y si se repite el digito se puede acortar en #rgb*/
+  color: hsl(0, 100%, 50%);/*hsl( tono , saturación , luminosidad )*/
+  color: hsla(0, 100%, 50%, 0.5);/*hsla( tono, saturación , luminosidad, alfa )*/
 }
 
-fondos {
-background-color:lightblue;/*color de fondo*/
-opacity: 0.3;/*opacidad/transparencia*/
-background-image: url("");/*propiedad especifica una imagen para usar como fondo de un elemento*/
-background-repeat: repeat-x;/*Si la imagen de arriba se repite sólo horizontalmente (repeat-y para vertical)*/
+.fondos {
+  background-color:lightblue;/*color de fondo*/
+  opacity: 0.3;/*opacidad/transparencia*/
+  background-image: url("");/*propiedad especifica una imagen para usar como fondo de un elemento*/
+  background-repeat: repeat-x;/*Si la imagen de arriba se repite sólo horizontalmente (repeat-y para vertical)*/
 }
 /*la imagen de fondo en la esquina superior derecha*/
-imagen {
+.imagen {
   background-image: url("");
   background-repeat: no-repeat;
   background-position: right top;
 }
 
 /*la imagen de fondo debe ser fija*/
-imagen_fija {
+.imagen_fija {
   background-image: url("");
   background-repeat: no-repeat;
   background-position: right top;
@@ -49,7 +49,7 @@ imagen_fija {
 }
 
 /*la imagen de fondo debe desplazarse con el resto de la página*/
-image_desplaza {
+.image_desplaza {
   background-image: url("");
   background-repeat: no-repeat;
   background-position: right top;
@@ -62,6 +62,55 @@ body {
   background-repeat: no-repeat;
   background-position: right top;
 }*/
-reducir_codigo {
+.reducir_codigo {
   background: #ffffff url("") no-repeat right top;
+}
+
+.bordes {
+  p.dotted {border-style: dotted;} /*Define un borde punteado*/
+  p.dashed {border-style: dashed;} /*Define un borde discontinuo*/
+  p.solid {border-style: solid;} /*Define un borde sólido*/
+  p.double {border-style: double;} /*Define un borde doble*/
+  p.groove {border-style: groove;} /*Define un borde ranurado 3D. El efecto depende del valor del color del borde.*/
+  p.ridge {border-style: ridge;} /*Define un borde estriado 3D. El efecto depende del valor del color del borde.*/
+  p.inset {border-style: inset;} /*Define un borde 3D insertado. El efecto depende del valor del color del borde.*/
+  p.outset {border-style: outset;} /*Define un borde inicial 3D. El efecto depende del valor del color del borde.*/
+  p.none {border-style: none;} /*No define ninguna frontera*/
+  p.hidden {border-style: hidden;} /*Define un borde oculto*/
+  p.mix {border-style: dotted dashed solid double;}/*borde doble y solido*/
+}
+
+.ancho_borde1 {
+  border-style: solid;
+  border-width: 5px;
+}
+
+.ancho_borde2 {
+  border-style: solid;
+  border-width: medium;
+}
+
+.ancho_borde3 {
+  border-style: dotted;
+  border-width: 2px;
+}
+
+.ancho_borde4 {
+  border-style: dotted;
+  border-width: thick;
+}
+
+.bordes_laterales1 {
+  border-style: solid;
+  border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+}
+
+.bordes_laterales2 {
+  border-style: solid;
+  border-width: 20px 5px; /* 20px top and bottom, 5px on the sides */
+}
+
+.bordes_laterales3 {
+  border-style: solid;
+  border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
 }
