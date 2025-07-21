@@ -128,3 +128,8 @@ body {
   border: 2px solid red;
   border-radius: 5px;
 }
+
+.margen_abreviado {
+  margin: 25px 50px 75px 100px;/*top, right, left, down*/
+  /*tambien se puede usar "margin:auto" y el "margin-bottom*/
+}
