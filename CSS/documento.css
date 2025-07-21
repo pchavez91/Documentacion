@@ -155,3 +155,35 @@ length- Define la altura/ancho en px, cm, etc.
 %- Define la altura/ancho en porcentaje del bloque contenedor.
 initial- Establece la altura/ancho a su valor predeterminado
 inherit- La altura/ancho se heredará de su valor padre.*/
+
+div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+/*Contenido : El contenido del cuadro, donde aparecen el texto y las imágenes.
+Relleno : Limpia un área alrededor del contenido. El relleno es transparente.
+Borde : un borde que rodea el relleno y el contenido.
+Margen : Limpia un área fuera del borde. El margen es transparente.*/
+
+.estilo_esquema {
+  p.dotted {outline-style: dotted;}/*Define un contorno punteado*/
+  p.dashed {outline-style: dashed;}/*Define un contorno discontinuo*/
+  p.solid {outline-style: solid;} /*Define un contorno sólido*/
+  p.double {outline-style: double;}/*Define un contorno doble*/
+  p.groove {outline-style: groove;}/*Define un contorno ranurado en 3D*/
+  p.ridge {outline-style: ridge;} /*Define un contorno estriado en 3D*/
+  p.inset {outline-style: inset;} /*Define un contorno de inserción 3D*/
+  p.outset {outline-style: outset;} /*Define un contorno de inicio en 3D*/
+  /*none- No define ningún contorno
+  hidden- Define un contorno oculto*/
+}
+
+/*Ancho del contorno
+thin (typically 1px)
+medium (typically 3px)
+thick (typically 5px)
+Un tamaño específico (in px, pt, cm, em, etc)*/
+
+/*La outline-offset propiedad añade espacio entre el contorno y el borde de un elemento. El espacio entre un elemento y su contorno es transparente.*/
