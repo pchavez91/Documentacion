@@ -284,3 +284,113 @@ Brush Script MT (cursiva)*/
   font-size/line-height(obligatorio)
   font-family(obligatorio)*/
 }
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+/*Este ejemplo demuestra un ejemplo más avanzado donde combinamos varias propiedades CSS para mostrar enlaces como cuadros/botones:*/
+.boton:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.boton:hover, a:active {
+  background-color: red;
+}
+
+/*Este ejemplo demuestra los diferentes tipos de cursores (puede ser útil para enlaces):
+<span style="cursor: auto">auto</span><br>
+<span style="cursor: crosshair">crosshair</span><br>
+<span style="cursor: default">default</span><br>
+<span style="cursor: e-resize">e-resize</span><br>
+<span style="cursor: help">help</span><br>
+<span style="cursor: move">move</span><br>
+<span style="cursor: n-resize">n-resize</span><br>
+<span style="cursor: ne-resize">ne-resize</span><br>
+<span style="cursor: nw-resize">nw-resize</span><br>
+<span style="cursor: pointer">pointer</span><br>
+<span style="cursor: progress">progress</span><br>
+<span style="cursor: s-resize">s-resize</span><br>
+<span style="cursor: se-resize">se-resize</span><br>
+<span style="cursor: sw-resize">sw-resize</span><br>
+<span style="cursor: text">text</span><br>
+<span style="cursor: w-resize">w-resize</span><br>
+<span style="cursor: wait">wait</span>*/
+
+/*propiedad especifica el tipo de marcador de elemento de lista*/
+.estilo_listas {
+  list-style-type: circle;
+  list-style-type: square;
+  list-style-type: upper-roman;
+  list-style-type: lower-alpha;
+}
+
+/*marcador de lista con imagen*/
+.marcador_imagen {
+  list-style-image: url('');
+}
+
+.posicion_marcadores_lista {
+  list-style-position: outside;/*veñetas estaran afuera*/
+  list-style-position: inside;/*viñetas estaran adentro*/
+}
+
+/*eliminar marcadores de lista*/
+.eliminar_marcador { 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lista_abreviada {
+  list-style: square inside url("");
+}
+
+table, th, td {
+  border: 1px solid;/*borde de tabla*/
+  width: 100%;/*ancho*/
+  border-collapse: collapse;/*contraer bordes*/
+  height: 70px;/*alto*/
+  width: 50%;/*ocupa solo la mitad de la ventana*/
+  text-align: left;/*texto alineado a la izquierda*/
+}
+/*alineacion verticalpara el contenido de la tabla*/
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+
+/*Para controlar el espacio entre el borde y el contenido de una tabla, utilice la padding*/
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+/*Agregue la border-bottompropiedad a <th> y <td> para divisores horizontales*/
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {background-color: coral;}/*resaltar las filas de la tabla al pasar el mouse sobre ellas*/
+tr:nth-child(even) {background-color: #f2f2f2;}/*Para las tablas con rayas de cebra, use el nth-child()selector y agregue un background-colora todas las filas de la tabla pares (o impares):*/
+/*tabla adaptable agregue un elemento contenedor (como <div>) overflow-x:auto alrededor del elemento <table>*/
