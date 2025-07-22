@@ -401,4 +401,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}/*Para las tablas con rayas de ce
   position: fixed;/*se posiciona con respecto a la ventana gráfica, lo que significa que permanece en la misma posición incluso al desplazarse por la página*/
   position: absolute;/*se posiciona en relación con el ancestro posicionado más cercano (en lugar de estar posicionado en relación con la ventana gráfica, como fijo).
   Sin embargo; si un elemento posicionado absolutamente no tiene antecesores posicionados, utiliza el cuerpo del documento y se mueve junto con el desplazamiento de la página.*/
+  position: sticky;/*se posiciona en función de la posición de desplazamiento del usuario.*/
+}
+
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;/*propiedad especifica el orden de la pila de un elemento (qué elemento debe colocarse delante o detrás de los demás).*/
 }
