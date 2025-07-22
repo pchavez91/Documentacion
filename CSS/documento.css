@@ -394,3 +394,11 @@ th, td {
 tr:hover {background-color: coral;}/*resaltar las filas de la tabla al pasar el mouse sobre ellas*/
 tr:nth-child(even) {background-color: #f2f2f2;}/*Para las tablas con rayas de cebra, use el nth-child()selector y agregue un background-colora todas las filas de la tabla pares (o impares):*/
 /*tabla adaptable agregue un elemento contenedor (como <div>) overflow-x:auto alrededor del elemento <table>*/
+
+.posicion {
+  position: static;/*se posiciona de acuerdo con el flujo normal de la página*/
+  position: relative;/*se posiciona en relación a su posición normal.*/
+  position: fixed;/*se posiciona con respecto a la ventana gráfica, lo que significa que permanece en la misma posición incluso al desplazarse por la página*/
+  position: absolute;/*se posiciona en relación con el ancestro posicionado más cercano (en lugar de estar posicionado en relación con la ventana gráfica, como fijo).
+  Sin embargo; si un elemento posicionado absolutamente no tiene antecesores posicionados, utiliza el cuerpo del documento y se mueve junto con el desplazamiento de la página.*/
+}
