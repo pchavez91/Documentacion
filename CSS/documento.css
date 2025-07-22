@@ -275,3 +275,12 @@ Brush Script MT (cursiva)*/
   font-size: 30px;/*puede ser en "em", %*/
   font-size:10vw/*tamaño de fuente adaptable a la ventana del navegador*/
 }
+
+.abreviar_fuente {
+  font: 20px Arial, sans-serif;/*
+  font-style
+  font-variant
+  font-weight
+  font-size/line-height(obligatorio)
+  font-family(obligatorio)*/
+}
