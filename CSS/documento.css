@@ -213,4 +213,65 @@ Un tamaño específico (in px, pt, cm, em, etc)*/
   text-indent: 50px;/*sangria*/
   letter-spacing: 5px;/*espacio entre letras*/
   line-height: 1.8;/*altura de linea*/
+  word-spacing: 10px;/*espaciado entre palabras*/
+  white-space: nowrap;/*espacio en blanco*/
+}
+
+.sombra_texto {
+  text-shadow: 2px 2px;
+  text-shadow: 2px 2px red;
+}
+
+.fuentes {
+  font-family: Arial, Helvetica, sans-serif;/*
+  Generic Font Family	    Examples of Font Names
+  Serif	                  Times New Roman
+                          Georgia
+                          Garamond
+
+  Sans-serif	            Arial
+                          Verdana
+                          Helvetica
+
+  Monospace	              Courier New
+                          Lucida Console
+                          Monaco
+
+  Cursive	                Brush Script MT
+                          Lucida Handwriting
+
+  Fantasy	                Copperplate
+                          Papyrus
+                          */
+}
+/*fuentes seguras:
+Arial (sin serifa)
+Verdana (sin serifa)
+Tahoma (sin serifa)
+Trebuchet MS (sans-serif)
+Times New Roman (serif)
+Georgia (serif)
+Garamond (serif)
+Courier New (monoespacio)
+Brush Script MT (cursiva)*/
+
+.estilo_fuente {
+  font-style: normal;/*El texto se muestra normalmente*/
+  font-style: italic;/*El texto se muestra en cursiva*/
+  font-style: oblique;/*el texto está "inclinado" (el oblicuo es muy similar a la cursiva, pero se admite con menos frecuencia)*/
+}
+
+.peso_fuente {
+  font-weight: normal;
+  font-weight: bold;
+}
+
+.variante_fuente {/*propiedad especifica si un texto debe mostrarse o no en una fuente de mayúsculas pequeñas.*/
+  font-variant: normal;
+  font-variant: small-caps;
+}
+
+.tamaño_fuente {
+  font-size: 30px;/*puede ser en "em", %*/
+  font-size:10vw/*tamaño de fuente adaptable a la ventana del navegador*/
 }
